@@ -1,12 +1,12 @@
 # _Currency Exchange Calculator_
 
-#### _Brief description of application, Date of current version_
+#### _This application allows the user to US Dollars into five other country's currency_
 
 #### By _**Noel R. Kirkland**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_Once the user has properly set up the application they can then enter an amount of money into a data field. The user can then select from a drop-down menue of five different countries. Once the user hits the submit button they are displayed the current exchange rate for their selected country as well as their inputted amount converted into that country's currency._
 
 ### Specs
 
@@ -20,24 +20,19 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 
 ## Setup/Installation Requirements
 
-* Open by downloading:
+* _Download the application from GitHub_:
   1. _Open the following web address in your browser:
 `https://github.com/NoelKirkland`_
   2. _Click on the button labeled_ Repositories
   3. _Navigate into the `REPO-EXTENSION` repository and click the green button labeled_ Clone or download.
-  4. _Open the directory and double click the `index.html` file to have it open in your default browser_
 
-* _Open by cloning:_
-  1. _Open the following web address in your browser:
-`https://github.com/NoelKirkland`_
-  2. _Click on the button labeled_ Repositories
-  3. _Navigate into the `REPO-EXTENSION` and click the green button labeled_ Clone or download.
-  4. _Open the directory in your preferred text-editor_
-  5. _Open the `index.html` file in your preferred browser_
+* _Open and install_
+  1. _Open the downloaded application into a text editor (V.S. Code preffered)_
+  2. _Open a new terminal in your text editor (Ctrl+` in V.S. Code) and run the command $ npm install_
+  3. Once all webpacks have been installed
 
-* _Open in browser:_
-  1. _Click the following web address to view the gh-pages published version to have it open in your default browser:
-`https://noelkirkland.github.io/REPO-EXTENSION`_
+
+
 
 _{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
 
