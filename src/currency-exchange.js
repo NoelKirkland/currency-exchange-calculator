@@ -17,3 +17,7 @@ export function getConversion(ammountUSD, exchangeRate){
   return ammountUSD * exchangeRate
 }
 
+export function getConversion(ammountUSD, exchangeRate){
+  return ammountUSD * exchangeRate
+}
+
