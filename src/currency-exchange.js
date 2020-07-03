@@ -1,5 +1,4 @@
-export class CurrencyExchange {
-  async getExchangeRates() {
+export async function getExchangeRates() {
     try {
       let response = await fetch(`https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/USA`);
       let jsonifiedResponse;
@@ -9,12 +8,8 @@ export class CurrencyExchange {
         jsonifiedResponse = false;
       }
       return jsonifiedResponse;
-    } catch(error) {
-      return false;
-    }
+      } catch(error) {
+        return false;
+      }
   }
 
-}
-    // getDif(amountUSD,exchangeRate){
-    //   return amountUSD * exchangeRate
-    // }
