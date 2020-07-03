@@ -15,6 +15,7 @@ async function getElements(){
   }
 }
 
+//commit chnage
 
 $(document).ready(function () {
   $('form#exchange-form').submit(function(event) {
