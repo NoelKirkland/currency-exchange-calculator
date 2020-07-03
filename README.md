@@ -8,39 +8,29 @@
 
 _Once the user has properly set up the application they can then enter an amount of money into a data field. The user can then select from a drop-down menue of five different countries. Once the user hits the submit button they are displayed the current exchange rate for their selected country as well as their inputted amount converted into that country's currency._
 
-### Specs
-
-* 
-| Input | Output |
-| :-------------     | :------------- | :------------- |
-
-* 
-| Input | Output |
-| :-------------     | :------------- | :------------- |
 
 ## Setup/Installation Requirements
+
+* _Get an API key_
+  1. Go to `https://www.exchangerate-api.com/`
+  2. Enter your email address and hit the button labeled "Get Free Key"
+  3. Copy your API key to your clip-board
 
 * _Download the application from GitHub_:
   1. _Open the following web address in your browser:
 `https://github.com/NoelKirkland`_
   2. _Click on the button labeled_ Repositories
-  3. _Navigate into the `REPO-EXTENSION` repository and click the green button labeled_ Clone or download.
+  3. _Navigate into the `currency-exchange-calculator` repository and click the green button labeled "Clone or download" and download the zip to your computer_
 
 * _Open and install_
   1. _Open the downloaded application into a text editor (V.S. Code preffered)_
   2. _Open a new terminal in your text editor (Ctrl+` in V.S. Code) and run the command $ npm install_
-  3. Once all webpacks have been installed
+  3. _Once all webpacks have been installed go to the .env file and paste your API key after the text that reads "API_KEY = "_
 
+* _Build and start_
+  1. _In the project's terminal run the command $npm run build_
+  2. _Once application is fully built, run the command $npm run start. This should open a live server in your default browser where you can now use the application_
 
-
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
-
-
-
-## Known Bugs
-
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
 
 ## Support and contact details
 
@@ -48,7 +38,7 @@ _If you run into any problems, or have any questions at all, feel free to reach 
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_HTML, CSS, Javascript, Jquery, Json, APIs and Webpacks_
 
 ### License
 

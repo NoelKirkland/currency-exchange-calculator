@@ -9,7 +9,9 @@ async function getElements(amountUSD, country){
   if (response === false){
     $(".show-exchange-rate").text(`There was an error handling your request.`);
   } else {
-    if (country === "Japan"){
+    if (amountUSD === ""){
+      $(".show-exchange-rate").text(`Please enter an amount.`);
+    } else if (country === "Japan"){
       $(".show-exchange-rate").text(`The exchange rate from USD to the Japanese Yen is ${response.conversion_rates.JPY}. This means that $${amountUSD} US Dollars would get you ¥${getConversion(amountUSD,response.conversion_rates.JPY)} Yen`);
     } else if (country === "England"){
       $(".show-exchange-rate").text(`The exchange rate from USD to the Great British Pound is ${response.conversion_rates.GBP}. This means that $${amountUSD} US Dollars would get you £${getConversion(amountUSD,response.conversion_rates.GBP)} Pounds`);
@@ -33,6 +35,7 @@ $(document).ready(function () {
   $('form#exchange-form').submit(function(event) {
       event.preventDefault();
     let inputtedAmountUSD = $("#ammount-usd").val();
+    console.log(inputtedAmountUSD)
     let inputtedCountry = $("#country").val();
     $("#country").val("");
 
