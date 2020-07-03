@@ -14,7 +14,7 @@ export class CurrencyExchange {
     }
   }
 
-  getDif(amountUSD,exchangeRate){
-    return amountUSD * exchangeRate
-  }
 }
+    // getDif(amountUSD,exchangeRate){
+    //   return amountUSD * exchangeRate
+    // }

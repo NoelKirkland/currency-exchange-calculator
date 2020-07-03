@@ -2,7 +2,7 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
-import { CurrencyExchange } from './..src/currency-exchange.js';
+import { CurrencyExchange } from './src/currency-exchange.js';
 
 $(document).ready(function () {
   $('form#exchange-form').submit(function(event) {
