@@ -10,12 +10,10 @@ async function getElements(){
   if (response === false){
     $(".show-exchange-rate").text(`There was an error handling your request.`);
   } else {
-    console.log(response.result);
+    console.log(response.conversion_rates.AED);
     $(".show-exchange-rate").text("The exchange rate from USD to is " + response.conversion_rates);
   }
 }
-
-//commit chnage
 
 $(document).ready(function () {
   $('form#exchange-form').submit(function(event) {
