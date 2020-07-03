@@ -5,6 +5,22 @@
     <title>Currency Exchange Calculator</title>
   </head>
   <body>
-    
+    <h1>See conversion rate of the US Dollar!</h1>
+    <label for="ammount-usd">Enter in USD ammount:</label>
+    <input id="ammount-usd" class="form-control-box" type="number">
+    <br>
+    <label for="country">Which of these countries would you like to convert currency to?</label>
+    <select class="form-control" id="country">
+      <option></option>
+      <option>Japan</option>
+      <option>China</option>
+      <option>Hong Kong</option>
+      <option>The European Union</option>
+
+      <button type="submit" class="btn">Submit</button>
+
+      <div class="show-exchange"></div>
+      <div class="show-errors"></div>
+    </select>
   </body>
 </html>
