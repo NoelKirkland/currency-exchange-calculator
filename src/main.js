@@ -2,7 +2,7 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
-import { CurrencyExchange } from '.src/currency-exchange.js';
+import { CurrencyExchange } from './..src/currency-exchange.js';
 
 $(document).ready(function () {
   $('form#exchange-form').submit(function(event) {
@@ -14,15 +14,14 @@ $(document).ready(function () {
 
     (async () => {
       let currencyExchange = new CurrencyExchange();
-      const response = await getExchangeByCurrency(currency);
+      const response = await currencyExchange.getExchangeRates();
       getElements(response);
     })();
 
     function getElements(response) {
       if (response) {
-        $(".show-exchange-rate").text(`The exchange rate from USD to ${currency} is ${response.conversion_rates}`)
+        $(".show-exchange-rate").text(`The exchange rate from USD to ${currency} is ${response.conversion_rates.USD} delete this ${amountUSD}`);
       }
     }
-
   });
 });
