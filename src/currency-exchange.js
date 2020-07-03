@@ -13,3 +13,7 @@ export async function getExchangeRates() {
       }
   }
 
+export function getConversion(ammountUSD, exchangeRate){
+  return ammountUSD * exchangeRate
+}
+
