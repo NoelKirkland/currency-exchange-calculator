@@ -19,6 +19,10 @@ async function getElements(amountUSD, country){
       $(".show-exchange-rate").text(`The exchange rate from USD to the Mexican Peso is ${response.conversion_rates.MXN}. This means that $${amountUSD} US Dollars would get you Mex$${getConversion(amountUSD,response.conversion_rates.MXN)} Pesos`);
     } else if (country === "Switzerland"){
       $(".show-exchange-rate").text(`The exchange rate from USD to the Swiss Franc is ${response.conversion_rates.CHF}. This means that $${amountUSD} US Dollars would get you SFr.${getConversion(amountUSD,response.conversion_rates.CHF)} Francs`);
+    } else if (country === ""){
+      $(".show-exchange-rate").text(`Please select a country.`);
+    } else if ((country !== "Japan") && (country !== "England") && (country !== "European Union") && (country !== "Mexico") && (country !== "Switzerland")){
+      $(".show-error").text(`We're sorry, that currency is not currently supported. Please select from on of the countries in the drop-down menue.`)
     } else {
       $(".show-error").text(`We're sorry. We are not sure what happened. Please refresh the page and try again`);
     }
