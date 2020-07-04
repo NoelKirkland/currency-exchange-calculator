@@ -9,7 +9,7 @@ async function getElements(amountUSD, country){
   if (response === false){
     $(".show-exchange-rate").text(`There was an error handling your request.`);
   } else {
-    if (amountUSD === ""){
+    if ((amountUSD === "0") || (amountUSD === "")){
       $(".show-exchange-rate").text(`Please enter an amount.`);
     } else if (country === "Japan"){
       $(".show-exchange-rate").text(`The exchange rate from USD to the Japanese Yen is ${response.conversion_rates.JPY}. This means that $${amountUSD} US Dollars would get you ¥${getConversion(amountUSD,response.conversion_rates.JPY)} Yen`);
@@ -24,9 +24,9 @@ async function getElements(amountUSD, country){
     } else if (country === ""){
       $(".show-exchange-rate").text(`Please select a country.`);
     } else if ((country !== "Japan") && (country !== "England") && (country !== "European Union") && (country !== "Mexico") && (country !== "Switzerland")){
-      $(".show-error").text(`We're sorry, that currency is not currently supported. Please select from on of the countries in the drop-down menue.`)
+      $(".show-error").text(`We're sorry, that currency is not currently supported. Please select from one of the countries in the drop-down menue.`);
     } else {
-      $(".show-error").text(`We're sorry. We are not sure what happened. Please refresh the page and try again`);
+      $(".show-error").text(`We're sorry, we are not sure what happened. Please refresh the page and try again`);
     }
   }
 }
@@ -35,10 +35,9 @@ $(document).ready(function () {
   $('form#exchange-form').submit(function(event) {
       event.preventDefault();
     let inputtedAmountUSD = $("#ammount-usd").val();
-    console.log(inputtedAmountUSD)
     let inputtedCountry = $("#country").val();
     $("#country").val("");
 
-    getElements(inputtedAmountUSD, inputtedCountry)
+    getElements(inputtedAmountUSD, inputtedCountry);
   });
 });

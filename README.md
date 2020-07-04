@@ -1,12 +1,12 @@
 # _Currency Exchange Calculator_
 
-#### _This application allows the user to US Dollars into five other country's currency_
+#### _This application allows the user to convert US Dollars into five other country's currency_
 
 #### By _**Noel R. Kirkland**_
 
 ## Description
 
-_Once the user has properly set up the application they can then enter an amount of money into a data field. The user can then select from a drop-down menue of five different countries. Once the user hits the submit button they are displayed the current exchange rate for their selected country as well as their inputted amount converted into that country's currency._
+_Once the user has properly set up the application they can then enter an amount of money into a data field. The user can then select from a drop-down menue of five different countries. Once the user  hits the submit button they are then displayed the current exchange rate for their selected country as well as their inputted US Dollar amount converted into that country's currency._
 
 
 ## Setup/Installation Requirements
@@ -14,7 +14,7 @@ _Once the user has properly set up the application they can then enter an amount
 * _Get an API key_
   1. Go to `https://www.exchangerate-api.com/`
   2. Enter your email address and hit the button labeled "Get Free Key"
-  3. Copy your API key to your clip-board
+  3. Copy your unique API key to your clip-board
 
 * _Download the application from GitHub_:
   1. _Open the following web address in your browser:
@@ -23,13 +23,13 @@ _Once the user has properly set up the application they can then enter an amount
   3. _Navigate into the `currency-exchange-calculator` repository and click the green button labeled "Clone or download" and download the zip to your computer_
 
 * _Open and install_
-  1. _Open the downloaded application into a text editor (V.S. Code preffered)_
-  2. _Open a new terminal in your text editor (Ctrl+` in V.S. Code) and run the command $ npm install_
+  1. _Open the downloaded application in a text editor (V.S. Code preffered)_
+  2. _Open a new terminal in your text editor (Ctrl+` in V.S. Code) and run the command <code>$ npm install</code>_
   3. _Once all webpacks have been installed go to the .env file and paste your API key after the text that reads "API_KEY = "_
 
 * _Build and start_
-  1. _In the project's terminal run the command $npm run build_
-  2. _Once application is fully built, run the command $npm run start. This should open a live server in your default browser where you can now use the application_
+  1. _In the project's terminal run the command `$npm run build`_
+  2. _Once application is fully built, run the command `$npm run start`. This should open a live server in your default browser where you can now use the application_
 
 
 ## Support and contact details

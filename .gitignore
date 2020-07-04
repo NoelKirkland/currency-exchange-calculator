@@ -3,4 +3,5 @@ package-lock.json
 .DS_Store
 specs.txt
 dist/
+.vscode
 .env
