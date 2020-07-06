@@ -5,6 +5,7 @@ export async function getExchangeRates() {
       if (response.ok && response.status == 200) {
         jsonifiedResponse = await response.json();
       } else {
+        console.log(response.status, response.ok);
         jsonifiedResponse = false;
       }
       return jsonifiedResponse;
@@ -13,8 +14,8 @@ export async function getExchangeRates() {
       }
   }
 
-export function getConversion(ammountUSD, exchangeRate){
-  return ammountUSD * exchangeRate;
+export function getConversion(amountUSD, exchangeRate){
+  return amountUSD * exchangeRate;
 }
 
 
