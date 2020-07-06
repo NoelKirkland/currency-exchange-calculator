@@ -26,7 +26,7 @@ _Once the user has properly set up the application they can then enter an amount
   1. _Open the downloaded application in a text editor (V.S. Code preferred)_
   2. _Create a file in the root directory of the application titled ".env"_
   3. _In your .env file you are going to write "API_KEY = <span style="color:red;">YOUR-UNIQUE-CODE-HERE</span>" but replace the red text by highlighting it and pasting the API key from your clip-board._
-  3. _Open a new terminal in your text editor (Ctrl+` in V.S. Code) and run the command <code>$ npm install</code>_
+  4. _Open a new terminal in your text editor (Ctrl+` in V.S. Code) and run the command <code>$ npm install</code>_
 
 * _Build and start_
   1. _Once all webpacks have been installed, run the command `$npm run build` in the project's terminal_
